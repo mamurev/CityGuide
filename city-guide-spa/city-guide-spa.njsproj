@@ -24,6 +24,8 @@
     <Content Include="angular.json" />
     <Content Include="package-lock.json" />
     <Content Include="package.json" />
+    <Content Include="src\app\value\value.component.css" />
+    <Content Include="src\app\value\value.component.html" />
     <Content Include="tsconfig.json" />
     <Content Include="tslint.json" />
     <Content Include="README.md" />
@@ -35,6 +37,9 @@
     <Content Include="src\tsconfig.app.json" />
     <Content Include="src\tsconfig.spec.json" />
     <Content Include="src\tslint.json" />
+    <TypeScriptCompile Include="src\app\models\Value.ts" />
+    <TypeScriptCompile Include="src\app\value\value.component.spec.ts" />
+    <TypeScriptCompile Include="src\app\value\value.component.ts" />
     <TypeScriptCompile Include="src\main.ts" />
     <TypeScriptCompile Include="src\polyfills.ts" />
     <TypeScriptCompile Include="src\test.ts" />
@@ -54,6 +59,8 @@
     <Folder Include="e2e\src" />
     <Folder Include="src" />
     <Folder Include="src\app" />
+    <Folder Include="src\app\models\" />
+    <Folder Include="src\app\value\" />
     <Folder Include="src\assets" />
     <Folder Include="src\environments" />
   </ItemGroup>
