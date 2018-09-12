@@ -9,8 +9,8 @@ namespace CityGuide.API.Models
             Cities = new List<City>();
         }
         public int Id { get; set; }
-        public string PasswordHash { get; set; }
-        public string PasswordSalt { get; set; }
+        public byte[] PasswordHash { get; set; }
+        public byte[] PasswordSalt { get; set; }
         public string UserName { get; set; }
 
         public List<City> Cities { get; set; }

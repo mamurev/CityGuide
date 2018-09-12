@@ -12,6 +12,7 @@ namespace CityGuide.API.Models
         public string Url { get; set; }
         public string PublicId { get; set; }
 
+
         public City City { get; set; }
     }
 }

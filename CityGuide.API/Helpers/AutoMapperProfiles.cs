@@ -1,11 +1,7 @@
 ﻿using AutoMapper;
 using CityGuide.API.Dtos;
 using CityGuide.API.Models;
-using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace CityGuide.API.Helpers
 {
@@ -18,6 +14,8 @@ namespace CityGuide.API.Helpers
                  {
                      opt.MapFrom(src => src.Photos.FirstOrDefault(p => p.IsMain).Url);
                  });
+
+            CreateMap<City, CityForDetailDto>();
         }
     }
 }
