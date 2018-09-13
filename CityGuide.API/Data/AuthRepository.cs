@@ -57,7 +57,7 @@ namespace CityGuide.API.Data
 
         private bool VerifyPasswordHash(string password, byte[] userPasswordHash, byte[] userPasswordSalt)
         {
-            using (var hmac = new System.Security.Cryptography.HMACSHA512(userPasswordHash))
+            using (var hmac = new System.Security.Cryptography.HMACSHA512(userPasswordSalt))
             {
                 var computedHash = hmac.ComputeHash(Encoding.UTF8.GetBytes(password));
                 for (int i = 0; i < computedHash.Length; i++)
