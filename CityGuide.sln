@@ -3,9 +3,35 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27703.2042
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Clients", "Clients", "{CB83D8FF-597C-489D-833C-8BC9E6EF384F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{CF4EF77F-5B1B-4B58-8783-DDA14E6CD551}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CityGuide.API", "CityGuide.API\CityGuide.API.csproj", "{4918D1EC-242B-41C0-8AD8-277F3E7B61C2}"
+EndProject
+Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "city-guide-spa", "city-guide-spa\city-guide-spa.njsproj", "{AE21AA09-5A5F-40E8-A046-C605FFB18C56}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4918D1EC-242B-41C0-8AD8-277F3E7B61C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4918D1EC-242B-41C0-8AD8-277F3E7B61C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4918D1EC-242B-41C0-8AD8-277F3E7B61C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4918D1EC-242B-41C0-8AD8-277F3E7B61C2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE21AA09-5A5F-40E8-A046-C605FFB18C56}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE21AA09-5A5F-40E8-A046-C605FFB18C56}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE21AA09-5A5F-40E8-A046-C605FFB18C56}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE21AA09-5A5F-40E8-A046-C605FFB18C56}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{4918D1EC-242B-41C0-8AD8-277F3E7B61C2} = {CF4EF77F-5B1B-4B58-8783-DDA14E6CD551}
+		{AE21AA09-5A5F-40E8-A046-C605FFB18C56} = {CB83D8FF-597C-489D-833C-8BC9E6EF384F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {DFED99AD-CE87-425F-8EC6-28D67920A85F}
